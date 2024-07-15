@@ -1,0 +1,15 @@
+﻿@model HomeVM
+
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>@Model.GroupName</h1>
+<h1>@Model.Student.Name</h1>
+<ul>
+    @foreach (var item in Model.Students)
+    {
+        <li>@item.Name</li>
+    }
+</ul>
